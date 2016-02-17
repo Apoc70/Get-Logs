@@ -102,7 +102,7 @@ Set-StrictMode -Version Latest
 [string]$FrontendTransportSubFolderName = "Frontend"
 
 # 2015-06-18: Implementation of global module
-Import-Module BDRFunctions
+Import-Module GlobalFunctions
 $ScriptDir = Split-Path $script:MyInvocation.MyCommand.Path
 $ScriptName = $MyInvocation.MyCommand.Name
 $logger = New-Logger -ScriptRoot $ScriptDir -ScriptName $ScriptName -LogFileRetention 14
